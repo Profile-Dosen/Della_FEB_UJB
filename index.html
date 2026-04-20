@@ -4,27 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- [BAGIAN KONTEN]: Judul Web & Meta Deskripsi (SEO) -->
+    <!-- ========================================================================= -->
+    <!-- 🛠️ EDIT BAGIAN 1: PENGATURAN SEO & METADATA WEB (PENTING UNTUK GOOGLE)      -->
+    <!-- ========================================================================= -->
     <title>Della Nanda Luthfiana - Academic Portfolio</title>
     <meta name="description" content="Portfolio akademik Della Nanda Luthfiana, S.M., MBA., CDMS. Dosen Manajemen di Universitas Janabadra dengan keahlian perilaku konsumen dan pemberdayaan UMKM.">
     <meta name="keywords" content="Della Nanda Luthfiana, Dosen Manajemen, Universitas Janabadra, Perilaku Konsumen, Pemberdayaan UMKM, Scopus, Lemhannas, CDMS, Digital Marketing">
     <meta name="author" content="Della Nanda Luthfiana">
     <meta name="robots" content="index, follow, max-image-preview:large">
     
-    <!-- [UBAH DOMAIN]: Ganti https://dellananda.com di bawah ini dengan domain asli Anda -->
+    <!-- Ganti https://dellananda.com di bawah ini dengan domain asli Anda nanti -->
     <link rel="canonical" href="https://dellananda.com">
+    <meta property="og:url" content="https://dellananda.com">
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
-    
-    <!-- Open Graph / Social Media Meta Tags -->
     <meta property="og:title" content="Della Nanda Luthfiana - Academic Portfolio">
     <meta property="og:description" content="Dosen Manajemen di Universitas Janabadra dengan fokus perilaku konsumen & pemberdayaan UMKM.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800">
-    
-    <!-- [UBAH DOMAIN]: Ganti https://dellananda.com di bawah ini dengan domain asli Anda -->
-    <meta property="og:url" content="https://dellananda.com">
     <meta property="og:type" content="website">
+
+    <!-- Favicon (Ikon di tab browser) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
 
     <!-- Structured Data (Schema Markup JSON-LD) -->
     <script type="application/ld+json">
@@ -37,10 +36,7 @@
         "@type": "CollegeOrUniversity",
         "name": "Universitas Janabadra"
       },
-      // [UBAH DOMAIN]: Ganti https://dellananda.com di bawah ini dengan domain asli Anda
       "url": "https://dellananda.com",
-      
-      // [BAGIAN KONTEN]: Ganti link-link di bawah ini dengan link profil asli Anda
       "sameAs": [
         "https://id.linkedin.com/in/della-nanda-luthfiana-545a7a160",
         "https://www.instagram.com/dellaluthfiana/",
@@ -51,10 +47,10 @@
       "description": "Dosen Manajemen di Universitas Janabadra dengan fokus perilaku konsumen, transformasi bisnis digital UMKM, dan pemberdayaan masyarakat."
     }
     </script>
+    <!-- ======================= AKHIR EDIT BAGIAN 1 ============================= -->
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -62,27 +58,20 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Nunito:wght@300;400;500;600;700;800&display=swap');
 
-        /* Perbaikan Scroll Offset yang lebih presisi agar judul sangat pas di bawah navbar */
-        html {
-            scroll-padding-top: 5rem; 
-            scroll-behavior: smooth;
-        }
+        html { scroll-padding-top: 5rem; scroll-behavior: smooth; }
 
         :root {
-            /* Tema Modern Vibrant (Kontras & Berenergi) */
-            --color-bg: #F8FAFC;             /* Latar utama: Slate 50 (Sangat bersih, putih keabu-abuan) */
-            --color-border: #E2E8F0;         /* Border: Slate 200 */
-            --color-primary: #4F46E5;        /* Utama: Indigo 600 (Profesional, cerdas) */
-            --color-primary-light: #EEF2FF;  /* Utama Terang: Indigo 50 */
-            --color-secondary: #F43F5E;      /* Sekunder: Rose 500 (Energik, berani, standout) */
-            --color-secondary-light: #FFF1F2;/* Sekunder Terang: Rose 50 */
-            --color-accent: #0EA5E9;         /* Aksen: Cyan 500 (Segar, tech-savvy) */
-            --color-accent-light: #E0F2FE;   /* Aksen Terang: Cyan 50 */
-            
-            --color-text-main: #0F172A;      /* Teks Utama: Sangat gelap, kontras tinggi */
-            --color-text-muted: #334155;     /* Teks Sekunder: Digelapkan agar lebih mudah dibaca (Aksesibilitas) */
-            
-            --color-gold: #F59E0B;           /* Warna tambahan untuk bintang/highlight */
+            --color-bg: #F8FAFC;             
+            --color-border: #E2E8F0;         
+            --color-primary: #4F46E5;        
+            --color-primary-light: #EEF2FF;  
+            --color-secondary: #F43F5E;      
+            --color-secondary-light: #FFF1F2;
+            --color-accent: #0EA5E9;         
+            --color-accent-light: #E0F2FE;   
+            --color-text-main: #0F172A;      
+            --color-text-muted: #334155;     
+            --color-gold: #F59E0B;           
         }
 
         body {
@@ -92,14 +81,10 @@
             overflow-x: hidden;
         }
 
-        ::selection {
-            background-color: var(--color-primary);
-            color: white;
-        }
-
+        ::selection { background-color: var(--color-primary); color: white; }
         .font-serif-title { font-family: 'Lora', serif; }
 
-        /* Glassmorphism Modern */
+        /* Animasi & Desain Kartu Kaca */
         .glass-modern {
             background: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(16px);
@@ -114,7 +99,6 @@
             border-color: var(--color-primary-light);
         }
 
-        /* Organic Animations (Optimized with will-change) */
         @keyframes breatheSoft {
             0%, 100% { transform: scale(1, 1) translateY(0); animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1); }
             50% { transform: scale(1.02, 0.98) translateY(3px); animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1); }
@@ -123,75 +107,34 @@
             0%, 100% { transform: translateY(0); animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1); }
             50% { transform: translateY(-10px); animation-timing-function: cubic-bezier(0.45, 0, 0.55, 1); }
         }
+        @keyframes floatBtn {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-4px); box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.4); }
+        }
 
         .anim-breathe { animation: breatheSoft 4s infinite; transform-origin: bottom center; transform-box: fill-box; will-change: transform; }
         .anim-float { animation: floatSendu 5s infinite; will-change: transform; }
-        
+        .anim-float-btn { animation: floatBtn 3s ease-in-out infinite; will-change: transform, box-shadow; }
         .illustration-wrapper:hover .anim-breathe { animation-duration: 2s; }
 
-        /* Scroll Reveal */
-        .reveal {
-            opacity: 0;
-            transform: translateY(25px);
-            transition: all 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
-            will-change: opacity, transform;
-        }
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        /* Efek Muncul Saat Scroll */
+        .reveal { opacity: 0; transform: translateY(25px); transition: all 0.7s cubic-bezier(0.2, 0.8, 0.2, 1); will-change: opacity, transform; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
         .delay-100 { transition-delay: 100ms; }
         .delay-200 { transition-delay: 200ms; }
         .delay-300 { transition-delay: 300ms; }
 
-        /* Academic Badge */
+        /* Badge Links */
         .academic-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 6px 16px;
-            background: white;
-            border: 1px solid var(--color-border);
-            border-radius: 100px;
-            font-size: 0.75rem;
-            font-weight: 800;
-            color: var(--color-text-muted);
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+            display: inline-flex; align-items: center; gap: 6px; padding: 6px 16px; background: white; border: 1px solid var(--color-border);
+            border-radius: 100px; font-size: 0.75rem; font-weight: 800; color: var(--color-text-muted); transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.02);
         }
-        .academic-badge:hover {
-            border-color: var(--color-primary);
-            color: var(--color-primary);
-            transform: translateY(-3px);
-            box-shadow: 0 6px 15px rgba(79, 70, 229, 0.15);
-        }
+        .academic-badge:hover { border-color: var(--color-primary); color: var(--color-primary); transform: translateY(-3px); box-shadow: 0 6px 15px rgba(79, 70, 229, 0.15); }
 
-        /* Navbar Active State Styling */
-        .nav-link.active-link {
-            color: var(--color-primary);
-            font-weight: 800;
-            position: relative;
-        }
-        .nav-link.active-link::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 15px;
-            height: 3px;
-            background-color: var(--color-primary);
-            border-radius: 2px;
-        }
-
-        /* Gradient Text */
-        .text-gradient {
-            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
+        /* Navigasi */
+        .nav-link.active-link { color: var(--color-primary); font-weight: 800; position: relative; }
+        .nav-link.active-link::after { content: ''; position: absolute; bottom: -4px; left: 50%; transform: translateX(-50%); width: 15px; height: 3px; background-color: var(--color-primary); border-radius: 2px; }
+        .text-gradient { background: linear-gradient(135deg, var(--color-primary), var(--color-secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: var(--color-bg); }
         ::-webkit-scrollbar-thumb { background: var(--color-primary); border-radius: 10px; }
@@ -200,17 +143,10 @@
 </head>
 <body class="min-h-screen relative overflow-x-hidden">
 
-    <!-- SVG Definitions for Gradients -->
     <svg width="0" height="0" style="position: absolute;">
         <defs>
-            <linearGradient id="itemGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" stop-color="#FFFFFF" />
-                <stop offset="100%" stop-color="#F1F5F9" />
-            </linearGradient>
-            <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="var(--color-primary)" />
-                <stop offset="100%" stop-color="var(--color-secondary)" />
-            </linearGradient>
+            <linearGradient id="itemGrad" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#FFFFFF" /><stop offset="100%" stop-color="#F1F5F9" /></linearGradient>
+            <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="var(--color-primary)" /><stop offset="100%" stop-color="var(--color-secondary)" /></linearGradient>
         </defs>
     </svg>
 
@@ -218,15 +154,16 @@
     <nav class="fixed w-full top-0 z-50 bg-white/85 backdrop-blur-xl border-b border-[var(--color-border)] shadow-sm transition-all duration-300 py-3">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
             
-            <!-- [BAGIAN KONTEN]: Nama Inisial di Navigasi Kiri Atas -->
+            <!-- ========================================================================= -->
+            <!-- 🛠️ EDIT BAGIAN 2: INISIAL & NAMA DI NAVBAR ATAS                           -->
+            <!-- ========================================================================= -->
             <a href="#hero" class="flex items-center gap-3 font-serif-title text-lg sm:text-xl font-bold text-[var(--color-text-main)] hover:opacity-80 transition-opacity">
                 <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-[var(--color-primary)] to-[var(--color-secondary)] flex items-center justify-center shadow-md shrink-0">
-                    <span class="font-serif-title font-bold text-lg text-white italic">D</span>
+                    <span class="font-serif-title font-bold text-lg text-white italic">D</span> <!-- INISIAL -->
                 </div>
-                <span class="truncate tracking-tight">Della Nanda L.</span>
+                <span class="truncate tracking-tight">Della Nanda L.</span> <!-- NAMA PENDEK -->
             </a>
             
-            <!-- Desktop Menu -->
             <div class="hidden lg:flex gap-6 xl:gap-8 text-[var(--color-text-muted)] text-[13px] xl:text-sm font-bold tracking-wider uppercase">
                 <a href="#about" class="nav-link hover:text-[var(--color-primary)] transition-colors relative">Profil</a>
                 <a href="#research" class="nav-link hover:text-[var(--color-primary)] transition-colors relative">Penelitian</a>
@@ -235,8 +172,9 @@
                 <a href="#pengabdian" class="nav-link hover:text-[var(--color-primary)] transition-colors relative">Pengabdian</a>
             </div>
             
-            <a href="mailto:della@janabadra.ac.id?subject=Pesan%20dari%20Portofolio%20Online%20Della%20Nanda&body=Halo%20Bu%20Della,%0A%0ASaya%20melihat%20portofolio%20online%20Anda%20dan%20tertarik%20untuk%20berdiskusi%20lebih%20lanjut%20mengenai..." class="hidden md:flex items-center gap-2 bg-[var(--color-text-main)] text-white hover:bg-[var(--color-primary)] px-6 py-2.5 rounded-full text-xs font-bold tracking-wide transition-all shadow-md hover:-translate-y-0.5">
-                <i data-lucide="send" class="w-3.5 h-3.5"></i> Hub. Saya
+            <!-- Tombol Email Animatif Desktop (Edit Link Email Disini) -->
+            <a href="mailto:della@janabadra.ac.id?subject=Pesan%20dari%20Portofolio%20Online%20Della%20Nanda&body=Halo%20Bu%20Della,%0A%0ASaya%20melihat%20portofolio%20online%20Anda%20dan%20tertarik%20untuk%20berdiskusi%20lebih%20lanjut%20mengenai..." class="anim-float-btn hidden md:flex items-center gap-2.5 bg-[var(--color-primary)] text-white hover:bg-[var(--color-text-main)] px-6 py-2.5 rounded-full text-xs font-bold tracking-wide transition-all duration-300 shadow-md hover:shadow-xl group">
+                <i data-lucide="send" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"></i> Hubungi Saya
             </a>
 
             <!-- Hamburger Menu Icon for Mobile -->
@@ -254,8 +192,10 @@
                 <a href="#books" class="mobile-link hover:text-[var(--color-primary)] py-2 border-b border-[var(--color-border)]">Buku</a>
                 <a href="#pengajaran" class="mobile-link hover:text-[var(--color-primary)] py-2 border-b border-[var(--color-border)]">Pengajaran</a>
                 <a href="#pengabdian" class="mobile-link hover:text-[var(--color-primary)] py-2 mb-2">Pengabdian</a>
-                <a href="mailto:della@janabadra.ac.id?subject=Pesan%20dari%20Portofolio%20Online%20Della%20Nanda&body=Halo%20Bu%20Della,%0A%0ASaya%20melihat%20portofolio%20online%20Anda%20dan%20tertarik%20untuk%20berdiskusi%20lebih%20lanjut%20mengenai..." class="mobile-link flex items-center justify-center gap-2 bg-[var(--color-primary)] text-white hover:bg-[var(--color-text-main)] px-5 py-3 rounded-full text-xs font-bold transition-all shadow-md w-full mx-auto max-w-[220px]">
-                    <i data-lucide="send" class="w-3.5 h-3.5"></i> Hub. Saya
+                
+                <!-- Tombol Email Animatif Mobile (Edit Link Email Disini) -->
+                <a href="mailto:della@janabadra.ac.id?subject=Pesan%20dari%20Portofolio%20Online%20Della%20Nanda&body=Halo%20Bu%20Della,%0A%0ASaya%20melihat%20portofolio%20online%20Anda%20dan%20tertarik%20untuk%20berdiskusi%20lebih%20lanjut%20mengenai..." class="mobile-link anim-float-btn flex items-center justify-center gap-2.5 bg-[var(--color-primary)] text-white hover:bg-[var(--color-text-main)] px-5 py-3 rounded-full text-xs font-bold transition-all duration-300 shadow-md w-full mx-auto max-w-[220px] group">
+                    <i data-lucide="send" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"></i> Hubungi Saya
                 </a>
             </div>
         </div>
@@ -270,8 +210,11 @@
 
         <div class="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-16 w-full relative z-10">
             
-            <!-- [BAGIAN KONTEN]: Teks Utama Hero Section -->
             <div class="lg:w-1/2 w-full z-20 text-center lg:text-left mt-8 lg:mt-0">
+                
+                <!-- ========================================================================= -->
+                <!-- 🛠️ EDIT BAGIAN 3: HERO (NAMA, GELAR, DESKRIPSI UTAMA)                     -->
+                <!-- ========================================================================= -->
                 
                 <!-- Badge Profesi -->
                 <div class="reveal flex flex-wrap gap-2.5 justify-center lg:justify-start mb-6 md:mb-8">
@@ -286,13 +229,13 @@
                     </div>
                 </div>
                 
-                <!-- Nama Utama -->
+                <!-- NAMA UTAMA -->
                 <h1 class="reveal delay-100 text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] font-serif-title font-bold text-[var(--color-text-main)] leading-[1.1] mb-6 md:mb-8 tracking-tight">
                     Della Nanda Luthfiana, <br class="hidden md:block"/>
                     <span class="text-gradient mt-2 inline-block">S.M., MBA., CDMS.</span>
                 </h1>
                 
-                <!-- Ringkasan Karier Deskripsi Singkat -->
+                <!-- DESKRIPSI SINGKAT -->
                 <p class="reveal delay-200 text-sm md:text-base lg:text-lg text-[var(--color-text-muted)] font-medium mb-8 md:mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0">
                     <strong class="text-[var(--color-text-main)]">Dosen Manajemen di Fakultas Ekonomi dan Bisnis Universitas Janabadra</strong> yang memiliki fokus pada perilaku konsumen, serta pemberdayaan UMKM berbasis dampak sosial.
                 </p>
@@ -301,31 +244,36 @@
                     <a href="#about" class="bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-secondary)] text-white px-7 sm:px-8 py-3 md:py-3.5 rounded-full text-sm font-bold tracking-wide shadow-lg shadow-[var(--color-primary)]/30 hover:shadow-[var(--color-secondary)]/40 hover:-translate-y-1 transition-all flex items-center justify-center gap-2 w-full sm:w-auto">
                         Kenal Lebih Dekat <i data-lucide="arrow-right" class="w-4 h-4"></i>
                     </a>
+                    
                     <!-- Tombol Kolaborasi -->
-                    <button class="open-email-modal bg-white border-2 border-[var(--color-border)] text-[var(--color-text-main)] px-7 sm:px-8 py-3 md:py-3.5 rounded-full text-sm font-bold tracking-wide hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] hover:bg-[var(--color-primary-light)] hover:-translate-y-1 transition-all flex items-center justify-center gap-2 w-full sm:w-auto shadow-sm">
-                        Mari Berkolaborasi <i data-lucide="message-circle" class="w-4 h-4"></i>
-                    </button>
+                    <a href="mailto:della@janabadra.ac.id?subject=Pesan%20dari%20Portofolio%20Online%20Della%20Nanda&body=Halo%20Bu%20Della,%0A%0ASaya%20melihat%20portofolio%20online%20Anda%20dan%20tertarik%20untuk%20berdiskusi%20lebih%20lanjut%20mengenai..." class="bg-white border-2 border-[var(--color-border)] text-[var(--color-text-main)] px-7 sm:px-8 py-3 md:py-3.5 rounded-full text-sm font-bold tracking-wide hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] hover:bg-[var(--color-primary-light)] hover:-translate-y-1 transition-all flex items-center justify-center gap-2.5 w-full sm:w-auto shadow-sm group">
+                        <i data-lucide="send" class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"></i> Mari Berkolaborasi
+                    </a>
                 </div>
 
-                <!-- [BAGIAN KONTEN]: Tautan Akademik (Scholar, SINTA, dll) -->
+                <!-- ========================================================================= -->
+                <!-- 🛠️ EDIT BAGIAN 4: TAUTAN AKADEMIK (SCHOLAR, SINTA, GARUDA)               -->
+                <!-- ========================================================================= -->
                 <div class="reveal delay-300 mt-10 md:mt-12 flex flex-wrap gap-3 justify-center lg:justify-start items-center">
                     <span class="text-xs font-extrabold text-[var(--color-text-muted)] uppercase tracking-wider w-full lg:w-auto mb-2 lg:mb-0 mr-0 lg:mr-2">Tautan Akademik:</span>
-                    <!-- Ganti href dengan link Google Scholar Asli -->
+                    <!-- Google Scholar -->
                     <a href="https://scholar.google.com/citations?user=dEoutOsAAAAJ&hl=id" target="_blank" class="academic-badge">
                         <svg class="w-4 h-4 text-[#3B82F6]" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.8 3.8v5.8h2.4v-4l4.8 3.8 12-9.5L12 0z"/></svg> Scholar
                     </a>
-                    <!-- Ganti href dengan link SINTA Asli -->
+                    <!-- SINTA -->
                     <a href="https://sinta.kemdiktisaintek.go.id/authors/profile/6853805" target="_blank" class="academic-badge">
                         <i data-lucide="globe" class="w-4 h-4 text-[#A855F7]"></i> SINTA
                     </a>
-                    <!-- Ganti href dengan link Garuda Asli -->
+                    <!-- Garuda -->
                     <a href="https://garuda.kemdiktisaintek.go.id/author/view/7720972" target="_blank" class="academic-badge">
                         <i data-lucide="library" class="w-4 h-4 text-[#F59E0B]"></i> Garuda
                     </a>
                 </div>
             </div>
 
-            <!-- [BAGIAN KONTEN]: Foto Profil Hero -->
+            <!-- ========================================================================= -->
+            <!-- 🛠️ EDIT BAGIAN 5: FOTO PROFIL UTAMA                                       -->
+            <!-- ========================================================================= -->
             <div class="lg:w-1/2 relative flex justify-center w-full mt-10 lg:mt-0 reveal">
                 <div class="relative w-64 h-[22rem] sm:w-72 sm:h-[26rem] md:w-[24rem] md:h-[30rem] lg:w-[26rem] lg:h-[32rem] group mx-auto">
                     
@@ -335,7 +283,7 @@
                     <div class="absolute inset-0 rounded-[2.5rem] overflow-hidden border-[6px] sm:border-8 border-white shadow-2xl bg-white z-10 transform group-hover:scale-[1.02] transition-all duration-700 anim-float" style="animation-duration: 6s;">
                         <div class="absolute inset-0 bg-[var(--color-secondary)] mix-blend-overlay opacity-[0.1] z-20 pointer-events-none group-hover:opacity-0 transition-opacity duration-500"></div>
                         
-                        <!-- Edit URL src gambar di bawah ini untuk foto profil Anda -->
+                        <!-- Ganti "della.jpg" dengan nama file foto profil Anda yang asli -->
                         <img 
                             src="della.jpg" 
                             alt="Foto Profil Della Nanda Luthfiana Dosen Manajemen Universitas Janabadra" 
@@ -348,6 +296,7 @@
                          <i data-lucide="star" class="w-6 h-6 sm:w-7 sm:h-7 text-[var(--color-gold)] fill-[var(--color-gold)]"></i>
                     </div>
                     
+                    <!-- Ilustrasi Pendukung Gambar -->
                     <div class="absolute -bottom-8 -left-10 sm:-bottom-10 sm:-left-14 w-44 h-44 sm:w-52 sm:h-52 md:w-60 md:h-60 z-30 drop-shadow-2xl group-hover:-translate-y-3 group-hover:-rotate-3 transition-all duration-700">
                         <svg class="illustration-wrapper w-full h-full" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g class="anim-breathe">
@@ -412,7 +361,10 @@
     <!-- 2. ABOUT LECTURER (PROFIL MENTOR) -->
     <section id="about" class="pt-24 pb-16 md:pt-32 md:pb-24 px-4 sm:px-6 bg-white relative border-t border-[var(--color-border)]">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16">
-            <!-- [BAGIAN KONTEN]: Teks Profil (About) -->
+            
+            <!-- ========================================================================= -->
+            <!-- 🛠️ EDIT BAGIAN 6: TEKS PROFIL LENGKAP (ABOUT)                             -->
+            <!-- ========================================================================= -->
             <div class="md:w-1/2 relative reveal w-full">
                 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[var(--color-primary-light)] text-[var(--color-primary)] text-xs md:text-sm font-bold tracking-wide mb-5 md:mb-6">
                     <i data-lucide="book-open" class="w-4 h-4"></i>
@@ -422,10 +374,11 @@
                     Mengintegrasikan Teori <br class="hidden sm:block"/> <span class="italic text-[var(--color-text-muted)] font-medium">& Praktik Bisnis Modern.</span>
                 </h2>
                 <div class="space-y-4 md:space-y-6 text-[var(--color-text-muted)] text-base md:text-lg leading-relaxed font-medium">
-                    <!-- Ganti paragraf di bawah ini untuk mengubah deskripsi profil -->
+                    <!-- Paragraf 1 -->
                     <p>
                         <strong>Della Nanda Luthfiana, S.M., MBA., CDMS.</strong> adalah Dosen Tetap dan <strong>Sekretaris Program Studi Manajemen</strong> di Fakultas Ekonomi dan Bisnis, Universitas Janabadra. Dengan keilmuan di bidang Manajemen dan Administrasi Bisnis, beliau konsisten mengembangkan pendekatan yang mengintegrasikan teori akademik dengan tantangan dunia usaha.
                     </p>
+                    <!-- Paragraf 2 -->
                     <p>
                         Dalam kesehariannya, beliau aktif mengajar, membimbing mahasiswa, dan memutakhirkan kurikulum agar sejalan dengan tren industri. Gaya mengajarnya ditekankan pada studi kasus nyata dan simulasi bisnis. Selain itu, pada tahun 2025 beliau juga dipercaya sebagai peserta <strong>Training of Trainer (ToT) Pemantapan Nilai-nilai Kebangsaan</strong> oleh Lemhannas RI.
                     </p>
@@ -499,9 +452,12 @@
     </section>
 
     <!-- 3. KEY METRICS (DATA VISUAL) -->
-    <!-- [BAGIAN KONTEN]: Angka Metrik / Highlight Pencapaian -->
     <section id="metrics" class="pt-24 pb-16 md:pt-32 md:pb-24 px-4 sm:px-6 relative z-20 bg-[var(--color-bg)]">
         <div class="max-w-6xl mx-auto">
+            
+            <!-- ========================================================================= -->
+            <!-- 🛠️ EDIT BAGIAN 7: ANGKA METRIK (STATISTIK)                                -->
+            <!-- ========================================================================= -->
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 md:gap-8">
                 
                 <!-- Metric 1 -->
@@ -512,6 +468,7 @@
                     <div class="w-12 h-12 md:w-14 md:h-14 bg-[var(--color-primary-light)] rounded-2xl flex items-center justify-center shadow-sm mb-5 md:mb-6 border border-white">
                         <i data-lucide="file-text" class="w-6 h-6 md:w-7 md:h-7 text-[var(--color-primary)]"></i>
                     </div>
+                    <!-- Edit Angka Disini -->
                     <h3 class="text-3xl md:text-4xl font-serif-title font-bold text-[var(--color-text-main)] mb-2">27+</h3>
                     <p class="text-[var(--color-text-muted)] font-bold text-[11px] md:text-xs uppercase tracking-wide leading-tight">Karya Ilmiah</p>
                 </div>
@@ -524,6 +481,7 @@
                     <div class="w-12 h-12 md:w-14 md:h-14 bg-[var(--color-secondary-light)] rounded-2xl flex items-center justify-center shadow-sm mb-5 md:mb-6 border border-white">
                         <i data-lucide="award" class="w-6 h-6 md:w-7 md:h-7 text-[var(--color-secondary)]"></i>
                     </div>
+                    <!-- Edit Teks Disini -->
                     <h3 class="text-3xl md:text-4xl font-serif-title font-bold text-[var(--color-text-main)] mb-2">Scopus</h3>
                     <p class="text-[var(--color-text-muted)] font-bold text-[11px] md:text-xs uppercase tracking-wide leading-tight">Jurnal Bereputasi</p>
                 </div>
@@ -536,6 +494,7 @@
                     <div class="w-12 h-12 md:w-14 md:h-14 bg-[var(--color-accent-light)] rounded-2xl flex items-center justify-center shadow-sm mb-5 md:mb-6 border border-white">
                         <i data-lucide="trending-up" class="w-6 h-6 md:w-7 md:h-7 text-[var(--color-accent)]"></i>
                     </div>
+                    <!-- Edit Angka Disini -->
                     <h3 class="text-3xl md:text-4xl font-serif-title font-bold text-[var(--color-text-main)] mb-2">100%</h3>
                     <p class="text-[var(--color-text-muted)] font-bold text-[11px] md:text-xs uppercase tracking-wide leading-tight">Applied Research</p>
                 </div>
@@ -548,6 +507,7 @@
                     <div class="w-12 h-12 md:w-14 md:h-14 bg-[var(--color-primary-light)] rounded-2xl flex items-center justify-center shadow-sm mb-5 md:mb-6 border border-white">
                         <i data-lucide="users" class="w-6 h-6 md:w-7 md:h-7 text-[var(--color-primary)]"></i>
                     </div>
+                    <!-- Edit Teks Disini -->
                     <h3 class="text-3xl md:text-4xl font-serif-title font-bold text-[var(--color-text-main)] mb-2">UMKM</h3>
                     <p class="text-[var(--color-text-muted)] font-bold text-[11px] md:text-xs uppercase tracking-wide leading-tight">Fokus Pengabdian</p>
                 </div>
@@ -557,7 +517,6 @@
     </section>
 
     <!-- 4. RESEARCH FOCUS (DATA PUBLIKASI) -->
-    <!-- [BAGIAN KONTEN]: Daftar Publikasi / Jurnal -->
     <section id="research" class="pt-24 pb-16 md:pt-32 md:pb-24 px-4 sm:px-6 bg-white relative overflow-hidden border-b border-[var(--color-border)]">
         <div class="absolute -right-10 top-10 opacity-5 w-[250px] h-[250px] md:w-[350px] md:h-[350px] pointer-events-none hidden sm:block">
             <svg class="illustration-wrapper w-full h-full" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -588,107 +547,110 @@
                 </h2>
             </div>
 
+            <!-- ========================================================================= -->
+            <!-- 🛠️ EDIT BAGIAN 8: DAFTAR PUBLIKASI / JURNAL                               -->
+            <!-- ========================================================================= -->
             <div class="flex flex-col gap-5 md:gap-6">
-                <!-- Publication 1 -->
-                <!-- Ganti href, judul, peran, dan nama jurnal sesuai kebutuhan -->
+                
+                <!-- Publikasi 1 -->
                 <div class="glass-modern p-5 sm:p-6 md:p-8 rounded-[2rem] flex flex-col md:flex-row gap-5 md:gap-6 items-start md:items-center group reveal delay-0">
                     <div class="bg-[var(--color-primary-light)] text-[var(--color-primary)] w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center shrink-0 font-black text-sm sm:text-base md:text-xl shadow-inner border border-white">
-                        2025
+                        2025 <!-- Tahun -->
                     </div>
                     <div class="flex-grow w-full space-y-3 md:space-y-4">
                         <h4 class="text-base sm:text-lg md:text-xl font-bold text-[var(--color-text-main)] group-hover:text-[var(--color-primary)] transition-colors leading-snug">
                             <a href="https://www.bio-conferences.org/articles/bioconf/abs/2025/06/bioconf_10thiccc_07004/bioconf_10thiccc_07004.html" target="_blank" rel="noreferrer" class="inline-flex items-start gap-2 hover:underline">
-                                Sustainable mobility as a climate adaptation response in protected world heritage areas...
+                                Sustainable mobility as a climate adaptation response in protected world heritage areas... <!-- Judul Artikel -->
                                 <i data-lucide="external-link" class="w-4 h-4 shrink-0 mt-1 opacity-60"></i>
                             </a>
                         </h4>
                         <div class="flex flex-wrap items-center gap-2.5 md:gap-3 text-[10px] sm:text-xs font-bold">
                             <span class="bg-[var(--color-secondary-light)] text-[var(--color-secondary)] px-3 py-1.5 rounded-full border border-white shadow-sm whitespace-nowrap">
-                                Co-Author
+                                Co-Author <!-- Peran -->
                             </span>
                             <span class="text-[var(--color-text-muted)] flex items-center gap-1.5 bg-[var(--color-bg)] px-3 py-1.5 rounded-full border border-[var(--color-border)] shadow-sm">
-                                <i data-lucide="book-open" class="w-3.5 h-3.5 shrink-0"></i> <span class="truncate max-w-[150px] sm:max-w-none">BIO Web of Conferences</span>
+                                <i data-lucide="book-open" class="w-3.5 h-3.5 shrink-0"></i> <span class="truncate max-w-[150px] sm:max-w-none">BIO Web of Conferences</span> <!-- Nama Jurnal -->
                             </span>
                             <span class="flex items-center gap-1.5 px-3 py-1.5 rounded-full border shadow-sm whitespace-nowrap bg-[var(--color-accent-light)] text-[var(--color-accent)] border-white">
-                                <i data-lucide="globe" class="w-3.5 h-3.5"></i> Scopus
+                                <i data-lucide="globe" class="w-3.5 h-3.5"></i> Scopus <!-- Indeks -->
                             </span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Publication 2 -->
+                <!-- Publikasi 2 -->
                 <div class="glass-modern p-5 sm:p-6 md:p-8 rounded-[2rem] flex flex-col md:flex-row gap-5 md:gap-6 items-start md:items-center group reveal delay-100">
                     <div class="bg-[var(--color-primary-light)] text-[var(--color-primary)] w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center shrink-0 font-black text-sm sm:text-base md:text-xl shadow-inner border border-white">
-                        2024
+                        2024 <!-- Tahun -->
                     </div>
                     <div class="flex-grow w-full space-y-3 md:space-y-4">
                         <h4 class="text-base sm:text-lg md:text-xl font-bold text-[var(--color-text-main)] group-hover:text-[var(--color-primary)] transition-colors leading-snug">
                             <a href="https://journal.uii.ac.id/AMBR/article/view/32430" target="_blank" rel="noreferrer" class="inline-flex items-start gap-2 hover:underline">
-                                Unraveling the complexity of the organic food market: Indonesian consumer perspective
+                                Unraveling the complexity of the organic food market: Indonesian consumer perspective <!-- Judul Artikel -->
                                 <i data-lucide="external-link" class="w-4 h-4 shrink-0 mt-1 opacity-60"></i>
                             </a>
                         </h4>
                         <div class="flex flex-wrap items-center gap-2.5 md:gap-3 text-[10px] sm:text-xs font-bold">
                             <span class="bg-[var(--color-primary-light)] text-[var(--color-primary)] px-3 py-1.5 rounded-full border border-white shadow-sm whitespace-nowrap">
-                                Author
+                                Author <!-- Peran -->
                             </span>
                             <span class="text-[var(--color-text-muted)] flex items-center gap-1.5 bg-[var(--color-bg)] px-3 py-1.5 rounded-full border border-[var(--color-border)] shadow-sm">
-                                <i data-lucide="book-open" class="w-3.5 h-3.5 shrink-0"></i> <span class="truncate max-w-[150px] sm:max-w-none">Asian Mgt. & Business Review</span>
+                                <i data-lucide="book-open" class="w-3.5 h-3.5 shrink-0"></i> <span class="truncate max-w-[150px] sm:max-w-none">Asian Mgt. & Business Review</span> <!-- Nama Jurnal -->
                             </span>
                             <span class="flex items-center gap-1.5 px-3 py-1.5 rounded-full border shadow-sm whitespace-nowrap bg-[var(--color-secondary-light)] text-[var(--color-secondary)] border-white">
-                                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> SINTA
+                                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> SINTA <!-- Indeks -->
                             </span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Publication 3 -->
+                <!-- Publikasi 3 -->
                 <div class="glass-modern p-5 sm:p-6 md:p-8 rounded-[2rem] flex flex-col md:flex-row gap-5 md:gap-6 items-start md:items-center group reveal delay-200">
                     <div class="bg-[var(--color-primary-light)] text-[var(--color-primary)] w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center shrink-0 font-black text-sm sm:text-base md:text-xl shadow-inner border border-white">
-                        2024
+                        2024 <!-- Tahun -->
                     </div>
                     <div class="flex-grow w-full space-y-3 md:space-y-4">
                         <h4 class="text-base sm:text-lg md:text-xl font-bold text-[var(--color-text-main)] group-hover:text-[var(--color-primary)] transition-colors leading-snug">
                             <a href="https://journal.uii.ac.id/AMBR/article/view/34798" target="_blank" rel="noreferrer" class="inline-flex items-start gap-2 hover:underline">
-                                Green threads: Unveiling sustainable fashion preferences among Indonesian gen Z
+                                Green threads: Unveiling sustainable fashion preferences among Indonesian gen Z <!-- Judul Artikel -->
                                 <i data-lucide="external-link" class="w-4 h-4 shrink-0 mt-1 opacity-60"></i>
                             </a>
                         </h4>
                         <div class="flex flex-wrap items-center gap-2.5 md:gap-3 text-[10px] sm:text-xs font-bold">
                             <span class="bg-[var(--color-primary-light)] text-[var(--color-primary)] px-3 py-1.5 rounded-full border border-white shadow-sm whitespace-nowrap">
-                                Author
+                                Author <!-- Peran -->
                             </span>
                             <span class="text-[var(--color-text-muted)] flex items-center gap-1.5 bg-[var(--color-bg)] px-3 py-1.5 rounded-full border border-[var(--color-border)] shadow-sm">
-                                <i data-lucide="book-open" class="w-3.5 h-3.5 shrink-0"></i> <span class="truncate max-w-[150px] sm:max-w-none">Asian Mgt. & Business Review</span>
+                                <i data-lucide="book-open" class="w-3.5 h-3.5 shrink-0"></i> <span class="truncate max-w-[150px] sm:max-w-none">Asian Mgt. & Business Review</span> <!-- Nama Jurnal -->
                             </span>
                             <span class="flex items-center gap-1.5 px-3 py-1.5 rounded-full border shadow-sm whitespace-nowrap bg-[var(--color-secondary-light)] text-[var(--color-secondary)] border-white">
-                                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> SINTA
+                                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> SINTA <!-- Indeks -->
                             </span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Publication 4 -->
+                <!-- Publikasi 4 -->
                 <div class="glass-modern p-5 sm:p-6 md:p-8 rounded-[2rem] flex flex-col md:flex-row gap-5 md:gap-6 items-start md:items-center group reveal delay-0">
                     <div class="bg-[var(--color-primary-light)] text-[var(--color-primary)] w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center shrink-0 font-black text-sm sm:text-base md:text-xl shadow-inner border border-white">
-                        2024
+                        2024 <!-- Tahun -->
                     </div>
                     <div class="flex-grow w-full space-y-3 md:space-y-4">
                         <h4 class="text-base sm:text-lg md:text-xl font-bold text-[var(--color-text-main)] group-hover:text-[var(--color-primary)] transition-colors leading-snug">
                             <a href="https://www.e3s-conferences.org/articles/e3sconf/abs/2024/49/e3sconf_talenta2024_04001/e3sconf_talenta2024_04001.html" target="_blank" rel="noreferrer" class="inline-flex items-start gap-2 hover:underline">
-                                Unraveling the Paradigm of Household Energy Consumption: Environmental Impacts...
+                                Unraveling the Paradigm of Household Energy Consumption: Environmental Impacts... <!-- Judul Artikel -->
                                 <i data-lucide="external-link" class="w-4 h-4 shrink-0 mt-1 opacity-60"></i>
                             </a>
                         </h4>
                         <div class="flex flex-wrap items-center gap-2.5 md:gap-3 text-[10px] sm:text-xs font-bold">
                             <span class="bg-[var(--color-secondary-light)] text-[var(--color-secondary)] px-3 py-1.5 rounded-full border border-white shadow-sm whitespace-nowrap">
-                                Corresponding Author
+                                Corresponding Author <!-- Peran -->
                             </span>
                             <span class="text-[var(--color-text-muted)] flex items-center gap-1.5 bg-[var(--color-bg)] px-3 py-1.5 rounded-full border border-[var(--color-border)] shadow-sm">
-                                <i data-lucide="book-open" class="w-3.5 h-3.5 shrink-0"></i> <span class="truncate max-w-[150px] sm:max-w-none">E3S Web of Conferences</span>
+                                <i data-lucide="book-open" class="w-3.5 h-3.5 shrink-0"></i> <span class="truncate max-w-[150px] sm:max-w-none">E3S Web of Conferences</span> <!-- Nama Jurnal -->
                             </span>
                             <span class="flex items-center gap-1.5 px-3 py-1.5 rounded-full border shadow-sm whitespace-nowrap bg-[var(--color-accent-light)] text-[var(--color-accent)] border-white">
-                                <i data-lucide="globe" class="w-3.5 h-3.5"></i> Scopus
+                                <i data-lucide="globe" class="w-3.5 h-3.5"></i> Scopus <!-- Indeks -->
                             </span>
                         </div>
                     </div>
@@ -699,7 +661,6 @@
     </section>
 
     <!-- 5. KARYA BUKU -->
-    <!-- [BAGIAN KONTEN]: Karya Buku yang Pernah Ditulis -->
     <section id="books" class="pt-24 pb-16 md:pt-32 md:pb-24 px-4 sm:px-6 bg-[var(--color-bg)] relative overflow-hidden border-b border-[var(--color-border)]">
         <div class="max-w-5xl mx-auto relative z-10">
             <div class="text-center mb-10 md:mb-14 reveal px-4">
@@ -712,12 +673,15 @@
                 </h2>
             </div>
 
-            <!-- Ganti detail buku di bawah ini sesuai yang diinginkan -->
+            <!-- ========================================================================= -->
+            <!-- 🛠️ EDIT BAGIAN 9: KARYA BUKU                                              -->
+            <!-- ========================================================================= -->
             <div class="glass-modern rounded-[2.5rem] p-8 md:p-12 lg:p-14 flex flex-col lg:flex-row items-center gap-10 md:gap-14 border border-white reveal">
                 <div class="w-full lg:w-1/3 flex justify-center relative pt-2 lg:pt-0">
                     <div class="w-44 h-60 sm:w-52 sm:h-72 bg-white rounded-r-2xl rounded-l-sm shadow-2xl border border-[var(--color-border)] transform -rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-500 overflow-hidden relative mx-auto">
                         <div class="absolute inset-0 bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-accent)] opacity-10"></div>
                         <div class="p-5 sm:p-6 h-full flex flex-col text-left">
+                             <!-- Info Cover Buku -->
                              <div class="text-[9px] sm:text-[11px] text-[var(--color-text-muted)] font-extrabold mb-2 sm:mb-3 uppercase tracking-widest text-center border-b-2 border-[var(--color-border)] pb-2">Penerbit Eureka</div>
                              <h3 class="font-serif-title text-sm sm:text-base md:text-lg font-bold text-[var(--color-text-main)] leading-snug mb-3 sm:mb-4 mt-5 sm:mt-8 text-center">
                                  Komunikasi Bisnis Interdisipliner
@@ -733,13 +697,16 @@
 
                 <div class="w-full lg:w-2/3 text-center lg:text-left">
                     <div class="inline-block bg-[var(--color-primary-light)] text-[var(--color-primary)] text-[11px] sm:text-xs font-bold px-4 py-1.5 rounded-full border border-white mb-4 md:mb-5 shadow-sm">Buku Referensi</div>
+                    <!-- Judul Buku -->
                     <h3 class="text-2xl sm:text-3xl font-serif-title font-bold text-[var(--color-text-main)] mb-4 md:mb-5 leading-snug">
                         Komunikasi Bisnis Interdisipliner
                     </h3>
+                    <!-- Deskripsi Buku -->
                     <p class="text-sm sm:text-base text-[var(--color-text-muted)] font-medium leading-relaxed mb-8 md:mb-10 max-w-xl mx-auto lg:mx-0">
                         Buku referensi yang membahas strategi komunikasi bisnis dari berbagai perspektif lintas disiplin ilmu. Disusun untuk memberikan wawasan aplikatif dalam menghadapi dinamika serta tantangan transformasi organisasi di dunia industri modern.
                     </p>
                     
+                    <!-- Link PDF Buku -->
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center bg-white p-4 sm:p-5 rounded-2xl border border-[var(--color-border)] mx-auto lg:mx-0 max-w-sm lg:max-w-none shadow-sm">
                         <a href="https://repository.penerbiteureka.com/media/publications/568281-komunikasi-bisnis-interdisipliner-13ab92bf.pdf" target="_blank" rel="noreferrer" class="bg-[var(--color-primary)] text-white hover:bg-[var(--color-text-main)] px-7 py-3 md:py-3.5 rounded-full font-bold shadow-lg hover:-translate-y-1 transition-all flex items-center justify-center gap-2 w-full sm:w-auto text-xs sm:text-sm tracking-wide">
                             <i data-lucide="download" class="w-4 h-4"></i> Baca / Unduh Buku (PDF)
@@ -751,7 +718,6 @@
     </section>
 
     <!-- 6. PENGAJARAN (MATA KULIAH) -->
-    <!-- [BAGIAN KONTEN]: Mata Kuliah yang Diajarkan -->
     <section id="pengajaran" class="pt-24 pb-16 md:pt-32 md:pb-24 px-4 sm:px-6 bg-white relative overflow-hidden border-b border-[var(--color-border)]">
         <div class="max-w-3xl mx-auto relative z-10">
             <div class="text-center mb-10 md:mb-14 reveal px-4">
@@ -764,9 +730,11 @@
                 </h2>
             </div>
 
-            <!-- Edit atau Tambah Mata Kuliah di Bawah Ini -->
+            <!-- ========================================================================= -->
+            <!-- 🛠️ EDIT BAGIAN 10: MATA KULIAH YANG DIAJARKAN                             -->
+            <!-- ========================================================================= -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Course 1 -->
+                <!-- Mata Kuliah 1 -->
                 <div class="glass-modern p-6 sm:p-8 rounded-[2rem] text-center border border-[var(--color-border)] reveal delay-0">
                     <div class="w-16 h-16 mx-auto bg-[var(--color-primary-light)] text-[var(--color-primary)] rounded-2xl flex items-center justify-center mb-5 border border-white shadow-sm">
                         <i data-lucide="trending-up" class="w-7 h-7"></i>
@@ -774,7 +742,8 @@
                     <h3 class="text-lg font-bold text-[var(--color-text-main)] mb-2">Manajemen Pemasaran</h3>
                     <p class="text-sm text-[var(--color-text-muted)] leading-relaxed">Fokus pada strategi pemasaran holistik dan adaptasi di era disrupsi digital.</p>
                 </div>
-                <!-- Course 2 -->
+                
+                <!-- Mata Kuliah 2 -->
                 <div class="glass-modern p-6 sm:p-8 rounded-[2rem] text-center border border-[var(--color-border)] reveal delay-100">
                     <div class="w-16 h-16 mx-auto bg-[var(--color-secondary-light)] text-[var(--color-secondary)] rounded-2xl flex items-center justify-center mb-5 border border-white shadow-sm">
                         <i data-lucide="users" class="w-7 h-7"></i>
@@ -787,7 +756,6 @@
     </section>
 
     <!-- 7. PENGABDIAN -->
-    <!-- [BAGIAN KONTEN]: Kegiatan Pengabdian & Sertifikat -->
     <section id="pengabdian" class="pt-24 pb-16 md:pt-32 md:pb-24 px-4 sm:px-6 bg-[var(--color-bg)] relative overflow-hidden border-b border-[var(--color-border)]">
         <div class="max-w-5xl mx-auto relative z-10">
             <div class="text-center mb-10 md:mb-14 reveal px-4">
@@ -800,9 +768,12 @@
                 </h2>
             </div>
 
+            <!-- ========================================================================= -->
+            <!-- 🛠️ EDIT BAGIAN 11: KEGIATAN PENGABDIAN MASYARAKAT                         -->
+            <!-- ========================================================================= -->
             <div class="flex flex-col gap-10 md:gap-14">
                 
-                <!-- Ganti Detail Program Pengabdian Sesuai Data Anda -->
+                <!-- Program Pengabdian 1 -->
                 <div class="glass-modern rounded-[2.5rem] p-8 md:p-12 lg:p-14 flex flex-col lg:flex-row items-center gap-10 md:gap-14 border border-white reveal">
                     <div class="w-full lg:w-1/3 flex justify-center relative pt-2 lg:pt-0">
                         <div class="w-60 h-60 sm:w-72 sm:h-72 bg-white rounded-full shadow-2xl border-4 border-[var(--color-border)] transform transition-transform duration-500 overflow-hidden relative mx-auto group flex items-center justify-center p-4">
@@ -850,6 +821,7 @@
                         <div class="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start items-center bg-white p-4 sm:p-5 rounded-2xl border border-[var(--color-border)] mx-auto lg:mx-0 max-w-lg lg:max-w-none shadow-sm">
                             <div class="text-center sm:text-left border-b sm:border-b-0 sm:border-r border-[var(--color-border)] pb-3 sm:pb-0 sm:pr-5 w-full sm:w-auto">
                                 <p class="text-[10px] sm:text-[11px] text-[var(--color-text-muted)] font-extrabold uppercase tracking-wider mb-1">Publikasi</p>
+                                <!-- Link Jurnal -->
                                 <a href="https://jamsi.jurnal-id.com/index.php/jamsi/article/view/2293" target="_blank" rel="noreferrer" class="text-lg sm:text-xl font-black text-[var(--color-primary)] hover:text-[var(--color-accent)] transition-colors inline-flex items-center gap-2 hover:underline">
                                     Jurnal JAMSI <i data-lucide="external-link" class="w-5 h-5 mt-0.5 opacity-70"></i>
                                 </a>
@@ -861,7 +833,7 @@
                     </div>
                 </div>
 
-                <!-- Program Pengabdian 2 (Baru) -->
+                <!-- Program Pengabdian 2 -->
                 <div class="glass-modern rounded-[2.5rem] p-8 md:p-12 lg:p-14 flex flex-col lg:flex-row-reverse items-center gap-10 md:gap-14 border border-white reveal delay-100">
                     <div class="w-full lg:w-1/3 flex justify-center relative pt-2 lg:pt-0">
                         <div class="w-60 h-60 sm:w-72 sm:h-72 bg-gradient-to-br from-[#DCFCE7] to-[#86EFAC] rounded-[3rem] shadow-2xl border-4 border-white transform transition-transform duration-500 overflow-hidden relative mx-auto group flex items-center justify-center p-4 hover:rotate-3 hover:scale-105">
@@ -890,6 +862,7 @@
                         <div class="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start items-center bg-white p-4 sm:p-5 rounded-2xl border border-[var(--color-border)] mx-auto lg:mx-0 max-w-lg lg:max-w-none shadow-sm">
                             <div class="text-center sm:text-left border-b sm:border-b-0 sm:border-r border-[var(--color-border)] pb-3 sm:pb-0 sm:pr-5 w-full sm:w-auto">
                                 <p class="text-[10px] sm:text-[11px] text-[var(--color-text-muted)] font-extrabold uppercase tracking-wider mb-1">Dokumentasi</p>
+                                <!-- Link YouTube -->
                                 <a href="https://youtu.be/sLTy1It6cbQ?si=VIcJDSB41VT7ryjk" target="_blank" rel="noreferrer" class="text-lg sm:text-xl font-black text-[#FF0000] hover:text-red-700 transition-colors inline-flex items-center gap-2 hover:underline">
                                     <i data-lucide="youtube" class="w-6 h-6"></i> Tonton Video
                                 </a>
@@ -906,7 +879,6 @@
     </section>
 
     <!-- 8. KEAHLIAN & PELATIHAN -->
-    <!-- [BAGIAN KONTEN]: Bidang Keahlian, Sertifikasi Nasional (ToT Lemhannas) -->
     <section id="keahlian" class="pt-24 pb-16 md:pt-32 md:pb-24 px-4 sm:px-6 bg-white relative border-t border-[var(--color-border)]">
         <div class="max-w-5xl mx-auto">
             <div class="text-center mb-10 md:mb-14 reveal px-4">
@@ -917,14 +889,17 @@
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif-title font-bold text-[var(--color-text-main)] leading-tight">
                     Bidang Keahlian & Riset
                 </h2>
-                <!-- Edit Deskripsi Utama Keahlian Disini -->
+                
+                <!-- ========================================================================= -->
+                <!-- 🛠️ EDIT BAGIAN 12: KEAHLIAN UTAMA & SERTIFIKASI PROFESIONAL                 -->
+                <!-- ========================================================================= -->
                 <p class="mt-4 md:mt-5 text-sm md:text-base text-[var(--color-text-muted)] font-medium leading-relaxed max-w-3xl mx-auto">
                     Keahlian utama meliputi transformasi bisnis digital UMKM, perilaku konsumen, manajemen strategis, serta pengembangan ekonomi berbasis dampak sosial dan keberlanjutan.
                 </p>
             </div>
             
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 md:gap-8">
-                <!-- Ganti Judul & Teks Keahlian 1 Disini -->
+                <!-- Keahlian 1 -->
                 <div class="glass-modern p-6 md:p-8 text-center rounded-3xl group reveal delay-0">
                     <div class="w-14 h-14 md:w-16 md:h-16 mx-auto bg-[var(--color-primary-light)] rounded-2xl flex items-center justify-center mb-5 md:mb-6 group-hover:scale-110 transition-transform border border-white">
                         <i data-lucide="store" class="w-6 h-6 md:w-7 md:h-7 text-[var(--color-primary)]"></i>
@@ -933,7 +908,7 @@
                     <p class="text-xs sm:text-sm text-[var(--color-text-muted)] font-medium leading-relaxed">Fokus pada pemberdayaan dan transformasi bisnis digital untuk sektor UMKM.</p>
                 </div>
 
-                <!-- Ganti Judul & Teks Keahlian 2 Disini -->
+                <!-- Keahlian 2 -->
                 <div class="glass-modern p-6 md:p-8 text-center rounded-3xl group reveal delay-100">
                     <div class="w-14 h-14 md:w-16 md:h-16 mx-auto bg-[var(--color-secondary-light)] rounded-2xl flex items-center justify-center mb-5 md:mb-6 group-hover:scale-110 transition-transform border border-white">
                         <i data-lucide="users" class="w-6 h-6 md:w-7 md:h-7 text-[var(--color-secondary)]"></i>
@@ -942,7 +917,7 @@
                     <p class="text-xs sm:text-sm text-[var(--color-text-muted)] font-medium leading-relaxed">Menganalisis perilaku konsumen yang diintegrasikan dengan efektivitas manajemen strategis.</p>
                 </div>
 
-                <!-- Ganti Judul & Teks Keahlian 3 Disini -->
+                <!-- Keahlian 3 -->
                 <div class="glass-modern p-6 md:p-8 text-center rounded-3xl group reveal delay-200">
                     <div class="w-14 h-14 md:w-16 md:h-16 mx-auto bg-[var(--color-accent-light)] rounded-2xl flex items-center justify-center mb-5 md:mb-6 group-hover:scale-110 transition-transform border border-white">
                         <i data-lucide="leaf" class="w-6 h-6 md:w-7 md:h-7 text-[var(--color-accent)]"></i>
@@ -951,8 +926,7 @@
                     <p class="text-xs sm:text-sm text-[var(--color-text-muted)] font-medium leading-relaxed">Pengembangan inisiatif ekonomi yang berlandaskan dampak sosial kemasyarakatan dan keberlanjutan.</p>
                 </div>
 
-                <!-- Sertifikasi & Pelatihan Nasional -->
-                <!-- Ganti Detail Sertifikasi Lemhannas atau Lainnya Disini -->
+                <!-- Sertifikasi 1: Lemhannas -->
                 <div class="col-span-1 sm:col-span-3 glass-modern p-8 md:p-10 text-center sm:text-left rounded-3xl group reveal delay-300 flex flex-col sm:flex-row items-center gap-8 border-2 border-[var(--color-primary-light)] mt-4 md:mt-2">
                     <div class="w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-tr from-[var(--color-primary)] to-[var(--color-secondary)] rounded-full flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform shadow-lg border-[4px] border-white">
                         <i data-lucide="shield-check" class="w-10 h-10 sm:w-12 sm:h-12 text-white"></i>
@@ -971,20 +945,16 @@
                     </div>
                 </div>
 
-                <!-- Sertifikat CDMS -->
+                <!-- Sertifikat 2: CDMS -->
                 <div class="col-span-1 sm:col-span-3 glass-modern p-8 md:p-10 lg:p-12 flex flex-col lg:flex-row-reverse items-center gap-8 md:gap-14 rounded-3xl border-2 border-[var(--color-primary-light)] group reveal delay-400">
                     <div class="w-full lg:w-1/3 flex justify-center relative pt-2 lg:pt-0">
                         <div class="w-60 h-60 sm:w-72 sm:h-72 bg-gradient-to-tr from-[var(--color-primary-light)] to-[var(--color-accent-light)] rounded-3xl shadow-xl border-4 border-white transform transition-transform duration-500 overflow-hidden relative mx-auto group-hover:-translate-y-2 group-hover:shadow-2xl flex items-center justify-center p-4">
-                            <!-- Decorative background elements -->
                             <div class="absolute inset-0 border-[10px] border-dashed border-[var(--color-primary)] opacity-10 rounded-2xl m-4 group-hover:rotate-6 transition-transform duration-700"></div>
-                            
-                            <!-- Certificate Icon SVG -->
                             <svg class="w-32 h-32 text-[var(--color-primary)] anim-float drop-shadow-md relative z-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                                 <circle cx="12" cy="8" r="7" fill="white"></circle>
                                 <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
                                 <path d="M12 8l1.5 1.5 2.5-.5-1 2.5.5 2.5-2.5-1-2.5 1 .5-2.5-1-2.5 2.5.5L12 8z" fill="var(--color-gold)" stroke="var(--color-gold)"></path>
                             </svg>
-
                             <div class="absolute bottom-6 left-0 right-0 text-center z-20">
                                 <span class="bg-white text-[var(--color-primary)] text-[10px] font-black px-3 py-1 rounded-full shadow-sm tracking-wider uppercase border border-[var(--color-border)]">FAAPM</span>
                             </div>
@@ -1015,8 +985,8 @@
                             </span>
                         </div>
 
-                        <!-- Ganti Link PDF Sertifikat CDMS -->
-                        <a href="1.3 Sertifikasi Dosen_Della Nanda Luthfiana (CDMS)/1.3 Sertifikasi Dosen_Della Nanda Luthfiana (CDMS).pdf" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 bg-[var(--color-primary)] text-white hover:bg-[var(--color-text-main)] px-7 py-3 rounded-full font-bold shadow-lg hover:-translate-y-1 transition-all text-sm tracking-wide w-full sm:w-auto">
+                        <!-- Link Dokumen Sertifikat -->
+                        <a href="1.3%20Sertifikasi%20Dosen_Della%20Nanda%20Luthfiana%20(CDMS)/1.3%20Sertifikasi%20Dosen_Della%20Nanda%20Luthfiana%20(CDMS).pdf" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 bg-[var(--color-primary)] text-white hover:bg-[var(--color-text-main)] px-7 py-3 rounded-full font-bold shadow-lg hover:-translate-y-1 transition-all text-sm tracking-wide w-full sm:w-auto">
                             <i data-lucide="file-text" class="w-4 h-4"></i> Lihat Dokumen Sertifikat
                         </a>
                     </div>
@@ -1027,13 +997,15 @@
     </section>
 
     <!-- FOOTER & SOCIAL MEDIA -->
-    <!-- [BAGIAN KONTEN]: Info Footer, Alamat, dan Tautan Media Sosial -->
     <footer id="contact" class="pt-20 md:pt-24 pb-8 bg-[var(--color-bg)] border-t border-[var(--color-border)] relative overflow-hidden">
         <div class="absolute -bottom-20 -right-20 w-80 h-80 bg-[var(--color-primary-light)] rounded-full blur-[100px] opacity-60 pointer-events-none"></div>
 
         <div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-10 mb-10 md:mb-12">
                 
+                <!-- ========================================================================= -->
+                <!-- 🛠️ EDIT BAGIAN 13: INFORMASI FOOTER & KONTAK                              -->
+                <!-- ========================================================================= -->
                 <div class="md:col-span-5 flex flex-col items-center md:items-start text-center md:text-left reveal">
                     <div class="w-20 h-20 md:w-28 md:h-28 mb-4 relative">
                          <div class="absolute inset-0 bg-white/50 rounded-full blur-xl"></div>
@@ -1053,9 +1025,7 @@
                             </g>
                          </svg>
                     </div>
-                    <!-- Ganti Nama di Footer Sesuai Keinginan -->
                     <h3 class="font-serif-title text-xl md:text-2xl font-bold text-[var(--color-text-main)] mb-2.5">Della Nanda L.</h3>
-                    <!-- Ganti Deskripsi Pendek di Footer -->
                     <p class="text-[var(--color-text-muted)] text-xs md:text-sm font-medium max-w-sm leading-relaxed pr-0 md:pr-4">
                         Mengintegrasikan teori akademik dengan praktik bisnis modern untuk transformasi bisnis dan pemberdayaan masyarakat.
                     </p>
@@ -1064,7 +1034,6 @@
                 <div class="md:col-span-3 flex flex-col items-center md:items-start reveal delay-100">
                     <h4 class="font-bold text-[var(--color-text-main)] mb-4 md:mb-5 uppercase tracking-wider text-xs">Tautan Akademik</h4>
                     <div class="flex flex-col gap-2.5 text-xs sm:text-sm font-semibold text-[var(--color-text-muted)]">
-                        <!-- Ganti URL Profil Akademik di Bawah Ini -->
                         <a href="https://scholar.google.com/citations?user=dEoutOsAAAAJ&hl=id" target="_blank" class="hover:text-[var(--color-primary)] transition-colors flex items-center gap-2.5">
                             <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.8 3.8v5.8h2.4v-4l4.8 3.8 12-9.5L12 0z"/></svg> Google Scholar
                         </a>
@@ -1081,7 +1050,6 @@
                     <h4 class="font-bold text-[var(--color-text-main)] mb-4 md:mb-5 uppercase tracking-wider text-xs">Kontak & Media Sosial</h4>
                     <div class="flex flex-col gap-3 text-xs font-semibold text-[var(--color-text-muted)] w-full max-w-xs md:max-w-none">
                         
-                        <!-- Ganti Teks Email Tampil di Bawah Ini -->
                         <div class="flex items-center gap-3 bg-white/60 p-2.5 rounded-xl border border-[var(--color-border)] shadow-sm">
                             <div class="w-8 h-8 rounded-full bg-[var(--color-primary-light)] flex items-center justify-center text-[var(--color-primary)] shrink-0">
                                 <i data-lucide="mail" class="w-4 h-4"></i>
@@ -1089,7 +1057,6 @@
                             <span class="truncate">della@janabadra.ac.id</span>
                         </div>
                         
-                        <!-- Ganti Alamat Kampus di Bawah Ini -->
                         <div class="flex items-center gap-3 bg-white/60 p-2.5 rounded-xl border border-[var(--color-border)] shadow-sm">
                             <div class="w-8 h-8 rounded-full bg-[var(--color-secondary-light)] flex items-center justify-center text-[var(--color-secondary)] shrink-0">
                                 <i data-lucide="map-pin" class="w-4 h-4"></i>
@@ -1098,16 +1065,16 @@
                         </div>
                         
                         <div class="flex flex-col sm:flex-row justify-center md:justify-start items-center gap-3 mt-2">
-                            <button class="open-email-modal bg-[var(--color-primary)] text-white hover:bg-[var(--color-text-main)] px-4 py-2 rounded-xl font-bold tracking-wide transition-all shadow-sm flex justify-center items-center gap-2 w-full sm:w-auto">
-                                <i data-lucide="send" class="w-3.5 h-3.5"></i> Kirim Email
-                            </button>
+                            
+                            <!-- Tombol Email Animatif di Footer -->
+                            <a href="mailto:della@janabadra.ac.id?subject=Pesan%20dari%20Portofolio%20Online%20Della%20Nanda&body=Halo%20Bu%20Della,%0A%0ASaya%20melihat%20portofolio%20online%20Anda%20dan%20tertarik%20untuk%20berdiskusi%20lebih%20lanjut%20mengenai..." class="anim-float-btn bg-[var(--color-primary)] text-white hover:bg-[var(--color-text-main)] px-4 py-2 rounded-xl font-bold tracking-wide transition-all duration-300 shadow-sm hover:shadow-xl flex justify-center items-center gap-2 w-full sm:w-auto group">
+                                <i data-lucide="send" class="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"></i> Hubungi Saya
+                            </a>
 
                             <div class="flex justify-center md:justify-start gap-2.5">
-                                <!-- Ganti Tautan URL LinkedIn -->
                                 <a href="https://id.linkedin.com/in/della-nanda-luthfiana-545a7a160" target="_blank" rel="noreferrer" class="w-9 h-9 rounded-full bg-white border border-[var(--color-border)] flex items-center justify-center text-[var(--color-text-muted)] hover:text-white hover:bg-[#0A66C2] hover:border-[#0A66C2] transition-all transform hover:-translate-y-1 shadow-sm" title="LinkedIn">
                                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                                 </a>
-                                <!-- Ganti Tautan URL Instagram -->
                                 <a href="https://www.instagram.com/dellaluthfiana/" target="_blank" rel="noreferrer" class="w-9 h-9 rounded-full bg-white border border-[var(--color-border)] flex items-center justify-center text-[var(--color-text-muted)] hover:text-white hover:bg-[#E1306C] hover:border-[#E1306C] transition-all transform hover:-translate-y-1 shadow-sm" title="Instagram">
                                     <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                                 </a>
@@ -1120,7 +1087,6 @@
             <!-- Bottom Copyright -->
             <div class="border-t border-[var(--color-border)] pt-5 flex flex-col md:flex-row justify-between items-center gap-2 reveal delay-300">
                 <p class="text-[var(--color-text-muted)] text-[10px] md:text-xs font-bold tracking-wide flex items-center gap-1.5 text-center md:text-left">
-                    <!-- Anda bisa mengubah Tahun dan Nama di bawah -->
                     &copy; 2026 Della Nanda Luthfiana. <i data-lucide="leaf" class="w-3.5 h-3.5 text-[var(--color-secondary)] shrink-0"></i> Academic Portfolio.
                 </p>
                 <p class="text-[var(--color-text-muted)] text-[10px] md:text-xs font-semibold text-center md:text-right">Universitas Janabadra, Yogyakarta</p>
@@ -1128,53 +1094,9 @@
         </div>
     </footer>
 
-    <!-- EMAIL POPUP MODAL (API Integration via FormSubmit) -->
-    <div id="emailModal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-[var(--color-text-main)]/50 backdrop-blur-sm opacity-0 transition-opacity duration-300 px-4">
-        <div class="bg-white rounded-3xl p-6 md:p-8 w-full max-w-lg shadow-2xl transform scale-95 transition-transform duration-300 border border-[var(--color-border)] relative mx-auto">
-            
-            <button id="closeModalBtn" class="absolute top-5 right-5 text-[var(--color-text-muted)] hover:text-[var(--color-secondary)] transition-colors focus:outline-none">
-                <i data-lucide="x" class="w-6 h-6"></i>
-            </button>
-            
-            <div class="text-center mb-6">
-                <div class="w-12 h-12 bg-gradient-to-tr from-[var(--color-primary)] to-[var(--color-secondary)] rounded-full flex items-center justify-center mx-auto mb-3 text-white shadow-md">
-                    <i data-lucide="mail" class="w-6 h-6"></i>
-                </div>
-                <h3 class="font-serif-title text-2xl font-bold text-[var(--color-text-main)]">Kirim Pesan Email</h3>
-                <p class="text-xs sm:text-sm text-[var(--color-text-muted)] font-medium mt-1">Pesan Anda akan langsung masuk ke inbox Bu Della.</p>
-            </div>
-            
-            <!-- [PENTING - EMAIL TARGET]: Ubah alamat email di dalam atribut action="https://formsubmit.co/..." di bawah ini untuk mengaktifkan penerimaan email ke akun Anda -->
-            <form action="https://formsubmit.co/della@janabadra.ac.id" method="POST" class="space-y-4">
-                <input type="hidden" name="_subject" value="Pesan Baru dari Portfolio Akademik Della Nanda">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" id="nextUrl" value="">
-                
-                <div>
-                    <label class="block text-[10px] sm:text-xs font-extrabold text-[var(--color-text-muted)] mb-1.5 uppercase tracking-wider">Nama Anda</label>
-                    <input type="text" name="name" required class="w-full px-4 py-2.5 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg)] focus:outline-none focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary-light)] transition-all text-sm font-semibold text-[var(--color-text-main)]" placeholder="Masukkan nama...">
-                </div>
-                <div>
-                    <label class="block text-[10px] sm:text-xs font-extrabold text-[var(--color-text-muted)] mb-1.5 uppercase tracking-wider">Alamat Email</label>
-                    <input type="email" name="email" required class="w-full px-4 py-2.5 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg)] focus:outline-none focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary-light)] transition-all text-sm font-semibold text-[var(--color-text-main)]" placeholder="alamat@email.com">
-                </div>
-                <div>
-                    <label class="block text-[10px] sm:text-xs font-extrabold text-[var(--color-text-muted)] mb-1.5 uppercase tracking-wider">Pesan</label>
-                    <textarea name="message" rows="4" required class="w-full px-4 py-2.5 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg)] focus:outline-none focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary-light)] transition-all text-sm font-semibold text-[var(--color-text-main)] resize-none" placeholder="Tuliskan pesan Anda di sini..."></textarea>
-                </div>
-                <button type="submit" class="w-full bg-[var(--color-primary)] text-white font-bold py-3 rounded-xl shadow-md hover:bg-[var(--color-text-main)] hover:-translate-y-1 transition-all mt-2 tracking-wide text-sm">
-                    Kirim Email Sekarang
-                </button>
-            </form>
-        </div>
-    </div>
-
     <!-- INTERACTIVE JAVASCRIPT -->
     <script>
         lucide.createIcons();
-
-        document.getElementById('nextUrl').value = window.location.href;
 
         // Mobile Menu
         const btn = document.getElementById('mobile-menu-btn');
@@ -1239,38 +1161,6 @@
                     link.classList.add('active-link');
                 }
             });
-        });
-
-        // Modal
-        const modal = document.getElementById('emailModal');
-        const openBtns = document.querySelectorAll('.open-email-modal');
-        const closeBtn = document.getElementById('closeModalBtn');
-        const modalContent = modal.querySelector('div');
-
-        const openModal = (e) => {
-            e.preventDefault();
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-            setTimeout(() => {
-                modal.classList.remove('opacity-0');
-                modalContent.classList.remove('scale-95');
-            }, 10);
-        };
-
-        const closeModal = () => {
-            modal.classList.add('opacity-0');
-            modalContent.classList.add('scale-95');
-            setTimeout(() => {
-                modal.classList.add('hidden');
-                modal.classList.remove('flex');
-            }, 300);
-        };
-
-        openBtns.forEach(btn => btn.addEventListener('click', openModal));
-        closeBtn.addEventListener('click', closeModal);
-        
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) closeModal();
         });
     </script>
 </body>
